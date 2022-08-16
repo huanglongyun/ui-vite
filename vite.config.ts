@@ -2,12 +2,15 @@
  * @Author: hly
  * @Date: 2022-08-16 14:06:40
  * @LastEditors: hly
- * @LastEditTime: 2022-08-16 14:17:58
+ * @LastEditTime: 2022-08-16 15:21:54
  * @Description:
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from '@vitejs/plugin-vue-jsx'
+// import { presetUno, presetAttributify, presetIcons } from "unocss";
+// import Unocss from "unocss/vite";
+import Unocss from "./config/unocss";
 
 // https://vitejs.dev/config/
 
@@ -27,7 +30,9 @@ export default defineConfig({
     // 添加JSX插件
     vueJsx({
         // options are passed on to @vue/babel-plugin-jsx
-    })
+    }),
+    // 添加UnoCSS插件
+    Unocss()
     ],
     // 添加库模式配置
 
