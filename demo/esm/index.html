@@ -1,0 +1,21 @@
+<!--
+ * @Author: hly
+ * @Date: 2022-08-16 14:20:10
+ * @LastEditors: hly
+ * @LastEditTime: 2022-08-16 14:20:18
+ * @Description:
+-->
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js";
+    import SmartyUI, { SFCButton, JSXButton, MyButton } from "../../dist/smarty-ui.esm.js";
+
+    createApp({
+        template: `
+      <SButton/>
+      <JSXButton/>
+      <SFCButton/>
+    `}).use(SmartyUI).mount('#app')
+
+</script>
