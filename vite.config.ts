@@ -2,7 +2,7 @@
  * @Author: hly
  * @Date: 2022-08-16 14:06:40
  * @LastEditors: hly
- * @LastEditTime: 2022-08-16 15:21:54
+ * @LastEditTime: 2022-08-17 15:33:02
  * @Description:
  */
 import { defineConfig } from "vite";
@@ -47,5 +47,16 @@ export default defineConfig({
             formats: ["esm", "umd", "iife"],
         },
     },
+    test: {
+        // enable jest-like global test APIs
+        globals: true,
+        // simulate DOM with happy-dom
+        // (requires installing happy-dom as a peer dependency)
+        environment: 'happy-dom',
+        // 支持tsx组件，很关键
+        transformMode: {
+            web: [/.[tj]sx$/]
+        }
+    }
 
 });
