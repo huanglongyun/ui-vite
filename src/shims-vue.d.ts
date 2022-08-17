@@ -2,7 +2,7 @@
  * @Author: hly
  * @Date: 2022-08-16 14:08:51
  * @LastEditors: hly
- * @LastEditTime: 2022-08-17 16:55:10
+ * @LastEditTime: 2022-08-17 17:16:42
  * @Description:
  */
 declare module "*.vue" {

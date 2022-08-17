@@ -1,4 +1,11 @@
-module.exports =   {
+/*
+ * @Author: hly
+ * @Date: 2022-08-17 16:29:38
+ * @LastEditors: hly
+ * @LastEditTime: 2022-08-17 17:15:44
+ * @Description:
+ */
+module.exports = {
   root: true,
   env: {
     browser: true,
@@ -26,6 +33,10 @@ module.exports =   {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    "linebreak-style": [
+      2,
+      "unix"
+    ]
   }
 }
