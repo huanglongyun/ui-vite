@@ -16,6 +16,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.3.0
   happy-dom: ^6.0.4
+  husky: ^8.0.1
   prettier: ^2.7.1
   typescript: ^4.7.4
   unocss: ^0.45.7
@@ -44,6 +45,7 @@ devDependencies:
   eslint-plugin-prettier: registry.npmmirror.com/eslint-plugin-prettier/4.2.1_2xd4q2tc5cqa5as7uugqhp6oue
   eslint-plugin-vue: registry.npmmirror.com/eslint-plugin-vue/9.3.0_eslint@8.22.0
   happy-dom: registry.npmmirror.com/happy-dom/6.0.4
+  husky: registry.npmmirror.com/husky/8.0.1
   prettier: registry.npmmirror.com/prettier/2.7.1
   typescript: registry.npmmirror.com/typescript/4.7.4
   unocss: registry.npmmirror.com/unocss/0.45.7_vite@3.0.7
@@ -3117,6 +3119,14 @@ packages:
     name: human-signals
     version: 2.1.0
     engines: {node: '>=10.17.0'}
+    dev: true
+
+  registry.npmmirror.com/husky/8.0.1:
+    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/husky/-/husky-8.0.1.tgz}
+    name: husky
+    version: 8.0.1
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   registry.npmmirror.com/iconv-lite/0.6.3:
