@@ -2,7 +2,7 @@
  * @Author: hly
  * @Date: 2022-08-16 14:17:04
  * @LastEditors: hly
- * @LastEditTime: 2022-08-16 14:17:11
+ * @LastEditTime: 2022-08-17 17:18:21
  * @Description:
  */
 import { App } from "vue";
@@ -21,5 +21,4 @@ export default {
     app.component(SFCButton.name, SFCButton);
     app.component(JSXButton.name, JSXButton);
   },
-
 };
